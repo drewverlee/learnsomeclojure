@@ -1,5 +1,10 @@
 # Start here
 
+So Studies show that reading code and have small specific guided steps is 
+the best way to learn. I think it also helps to skirt the truth tell necessary.
+So that's what this guide is. Just small `bites` of clojure to get you familiar with
+the language. No need to type!
+
 bites:
 [1](https://github.com/drewverlee/learnsomeclojure#first-bite),
 [2](https://github.com/drewverlee/learnsomeclojure#second-bite),
@@ -9,10 +14,6 @@ bites:
 
 ## First Bite
 
-So Studies show that reading code and have small specific guided steps is 
-the best way to learn. I think it also helps to skirt the truth tell necessary.
-
-So that's what this guide is.
 
 Lets look at some clojure
 
