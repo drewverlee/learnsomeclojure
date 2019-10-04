@@ -1,5 +1,12 @@
 # Start here
 
+bites:
+[1](https://github.com/drewverlee/learnsomeclojure#first-bite),
+[2](https://github.com/drewverlee/learnsomeclojure#second-bite),
+[3](https://github.com/drewverlee/learnsomeclojure#second-third),
+[4](https://github.com/drewverlee/learnsomeclojure#second-fourth),
+[5](https://github.com/drewverlee/learnsomeclojure#second-fifth),
+
 ## First Bite
 
 So Studies show that reading code and have small specific guided steps is 
