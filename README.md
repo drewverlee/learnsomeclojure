@@ -259,4 +259,101 @@ and putting things into them and getting stuff out of them is more then half of 
 All the other stuff, is mostly ceremony that _helps_ with that.
 
 
+
 ## Fifth Bite
+
+
+
+put your recap hat on...
+
+- `[]` makes  a vector and `conj` adds things to it, while `nth` can get things from it based on position.
+- `{}` make a hashmap and `assoc` adds things to it, while `get` can get things from it based on name.
+
+
+So we can put things in collection and we can take them out. Thats nice but its missing something!
+oh, yea, making changes to the things in the collection.
+
+Remember our good friend that incremented numbers? the `inc` function?
+
+```clojure
+(inc 1)
+```
+
+outputs `2`
+
+While, this guy can help transform the values in our collection as well.
+Say we have our vector from before 
+
+
+```clojure
+[1, 100, 7]
+```
+
+and we want to increment everything in it to get...
+
+```clojure
+[2, 101, 8]
+```
+
+While map is a function that when handed a collection (like our vector) and `inc` can increment everything in it.
+
+```clojure
+(map inc [1, 100, 7])
+```
+
+will output `[2, 101, 8]`.
+
+if we handed a map that decremented (subtracted 1 from something)
+
+```
+(dec 1)
+```
+
+will output `0`.
+
+If we handed dec to map then it would decremented everything
+
+```clojure
+(map dec [1, 100, 7])
+```
+
+will output `[0, 99, 6]`.
+
+so basically map can take a function and a function and apply that function to everything in that collection.
+you can read this kind of like:
+
+- `map` i take a function
+- `dec` decrement
+- `[1, 100, 7]` and apply it to everything in the collection
+
+so does `[(dec 1) (dec 100) (dec 7)]`. 
+
+So we can `inc` and `dec` in our `vector` by using `map`. Thats great, keep in mind that you could 
+send `map` any function to operate on the `vector`.
+
+What if we wanted to `filter` something out of our collection/vector? Well, 
+no worries, `filter` is a function just like `map`. Think of filter 
+like a literal filter, like your going to hand it a function that describes
+what you want to *pass through* the `filter`. 
+
+```clojure
+(filter odd? [1, 100, 8])
+```
+
+would return `[1, 100]` because we only let odd numbers trough and `8` is even
+
+you can read it like
+
+- `filter` i take a function, to let me know what to keep,
+- `odd?` which are odd? numbers
+- `[1, 100, 7]` and apply that filter check to everything in the collection.
+
+
+
+*Dance Party!*
+
+Pat your self on the back.
+
+You just learned two powerful ways to transform things in a `vector`. 
+Transforming things in collections is a huge part of clojure. A significant amount of real work gets done 
+doing just this. Like big fancy systems run by just doing map and filter and now that power is yours.
